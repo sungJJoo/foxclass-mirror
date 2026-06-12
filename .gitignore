@@ -1,0 +1,7 @@
+# 세션 쿠키 등 민감 정보 제외
+cookies.txt
+
+# 시스템 파일
+Thumbs.db
+.DS_Store
+desktop.ini

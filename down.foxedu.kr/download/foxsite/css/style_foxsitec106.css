@@ -1,0 +1,586 @@
+@charset "UTF-8";
+/* foxsite commmon : footer */
+@import url(../../../../fonts.googleapis.com/earlyaccess/notosanskr.css);
+:root {
+  --foxsite-color-spot: #1D3661;
+  --foxsite-color-bk: #333;
+  --foxsite-color-gr: #777;
+  --foxsite-color-gr100: #ccc;
+  --foxsite-color-gr80: #eee;
+  --foxsite-color-gr50: #F8F8F8;
+  --foxsite-shadow: 15px 15px 30px rgba(0,0,0,.1);
+  --foxsite-border-radius: 10px;
+}
+
+/* common */
+a {
+  text-decoration: none;
+  color: var(--foxsite-color-bk);
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* nav */
+.logo-area {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 10px;
+  vertical-align: middle;
+  z-index: 1;
+}
+.logo-area.wh .logo a[class^=foxsite-logo] {
+  display: block;
+  width: 182px;
+  height: 30px;
+  background-size: auto 30px;
+}
+.logo-area.wh .logo .foxsite-logo-foxedu {
+  background-image: url("http://down.foxedu.kr/download/foxsite/images/logo/logo_foxedu_wh.svg");
+}
+.logo-area.wh .logo .foxsite-logo-lc {
+  background-image: url("http://down.foxedu.kr/download/foxsite/images/logo/logo_foxlc.svg");
+}
+.logo-area.wh .logo .foxsite-logo-story {
+  background-image: url("http://down.foxedu.kr/download/foxsite/images/logo/logo_foxstory.svg");
+}
+.logo-area.wh .logo .foxsite-logo-class {
+  background-image: url("http://down.foxedu.kr/download/foxsite/images/logo/logo_foxclass.svg");
+}
+.logo-area.wh .logo .foxsite-logo-news {
+  background-image: url("http://down.foxedu.kr/download/foxsite/images/logo/logo_foxnews.svg");
+}
+.logo-area.wh .logo .foxsite-logo-store {
+  background-image: url("http://down.foxedu.kr/download/foxsite/images/logo/logo_foxstore.svg");
+}
+.logo-area.wh .logo .foxsite-logo-steam {
+  background-image: url("http://down.foxedu.kr/download/foxsite/images/logo/logo_foxsteam_wh.svg");
+}
+.logo-area.wh .btn-foxsite-nav-open::before {
+  border-color: #fff;
+}
+
+.site-header.is-sticky .logo-area.wh .logo .foxsite-logo-foxedu {
+  background-image: url("http://down.foxedu.kr/download/foxsite/images/logo/logo_foxedu.svg");
+}
+.site-header.is-sticky .logo-area.wh .logo .foxsite-logo-lc {
+  background-image: url("http://down.foxedu.kr/download/foxsite/images/logo/logo_foxlc.svg");
+}
+.site-header.is-sticky .logo-area.wh .logo .foxsite-logo-story {
+  background-image: url("http://down.foxedu.kr/download/foxsite/images/logo/logo_foxstory.svg");
+}
+.site-header.is-sticky .logo-area.wh .logo .foxsite-logo-class {
+  background-image: url("http://down.foxedu.kr/download/foxsite/images/logo/logo_foxclass.svg");
+}
+.site-header.is-sticky .logo-area.wh .logo .foxsite-logo-news {
+  background-image: url("http://down.foxedu.kr/download/foxsite/images/logo/logo_foxnews.svg");
+}
+.site-header.is-sticky .logo-area.wh .logo .foxsite-logo-store {
+  background-image: url("http://down.foxedu.kr/download/foxsite/images/logo/logo_foxstore.svg");
+}
+.site-header.is-sticky .logo-area.wh .logo .foxsite-logo-steam {
+  background-image: url("http://down.foxedu.kr/download/foxsite/images/logo/logo_foxsteam.svg");
+}
+.site-header.is-sticky .logo-area.wh .btn-foxsite-nav-open::before {
+  border-color: var(--foxsite-color-spot);
+}
+
+.logo {
+  margin: 0;
+  padding: 0;
+}
+.logo a {
+  display: block;
+  height: 30px;
+}
+.logo img {
+  display: block;
+  height: 100%;
+}
+
+.foxsite-nav {
+  opacity: 1;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: -10px;
+  width: 260px;
+  -webkit-box-shadow: var(--foxsite-shadow);
+          box-shadow: var(--foxsite-shadow);
+  border-radius: var(--foxsite-border-radius);
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 20px 20px;
+  z-index: 10;
+  font-size: 0;
+}
+.foxsite-nav.is-open {
+  display: block;
+  -webkit-animation: navopen 0.5s ease-in forwards;
+          animation: navopen 0.5s ease-in forwards;
+}
+.foxsite-nav .is-disabled {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  opacity: 0.4;
+}
+.foxsite-nav .label-foxsite-disabled {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  color: #fff;
+  font-size: 10px;
+  padding: 0 5px;
+  height: 15px;
+  line-height: 13px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 2em;
+  font-weight: 700;
+}
+
+/* animation */
+@-webkit-keyframes navopen {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10px) scale(1);
+            transform: translateY(10px) scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1);
+  }
+}
+@keyframes navopen {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10px) scale(1);
+            transform: translateY(10px) scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1);
+  }
+}
+.foxsite-nav-top {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid var(--foxsite-color-gr80);
+  margin-bottom: 20px;
+}
+.foxsite-nav-top cite {
+  display: block;
+  width: calc(100% - 50px);
+  margin-right: 50px;
+}
+
+.foxsite-nav-list li {
+  position: relative;
+}
+.foxsite-nav-list li ~ li {
+  margin-top: 20px;
+}
+
+[class^=foxsite-logo] {
+  display: block;
+  font-style: normal;
+  text-indent: -99999px;
+  height: 22px;
+  background-position: left 0;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.foxsite-nav-top [class^=foxsite-logo] {
+  height: 20px;
+  background-size: auto 20px;
+}
+
+.foxsite-logo-foxedu {
+  background-image: url("http://down.foxedu.kr/download/foxsite/images/logo/logo_foxedu.svg");
+}
+
+.foxsite-logo-lc {
+  background-image: url("http://down.foxedu.kr/download/foxsite/images/logo/logo_foxlc.svg");
+}
+
+.foxsite-logo-story {
+  background-image: url("http://down.foxedu.kr/download/foxsite/images/logo/logo_foxstory.svg");
+}
+
+.foxsite-logo-class {
+  background-image: url("http://down.foxedu.kr/download/foxsite/images/logo/logo_foxclass.svg");
+}
+
+.foxsite-logo-news {
+  background-image: url("http://down.foxedu.kr/download/foxsite/images/logo/logo_foxnews.svg");
+}
+
+.foxsite-logo-store {
+  background-image: url("http://down.foxedu.kr/download/foxsite/images/logo/logo_foxstore.svg");
+}
+
+.foxsite-logo-steam {
+  background-image: url("http://down.foxedu.kr/download/foxsite/images/logo/logo_foxsteam.svg");
+}
+
+.btn-foxsite-nav-open,
+.btn-foxsite-nav-close {
+  position: relative;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid var(--foxsite-color-gr100);
+  padding: 0;
+  background: transparent;
+  text-indent: -99999px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.btn-foxsite-nav-open::before,
+.btn-foxsite-nav-close::before {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -6px;
+  margin-left: -4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid var(--foxsite-color-spot);
+  border-right: 2px solid var(--foxsite-color-spot);
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.btn-foxsite-nav-close {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.btn-foxsite-nav-close::before {
+  margin-top: -2px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+/* footer */
+.foxsite-footer {
+  font-family: "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple Gothic", "돋움", Dotum, "굴림", Gulim, sans-serif;
+  border-top: 1px solid var(--foxsite-color-gr80);
+  font-size: 14px;
+  letter-spacing: -0.025em;
+  color: var(--foxsite-color-gr);
+  word-break: keep-all;
+}
+.foxsite-footer .wrap {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  max-width: 1200px;
+  min-height: 0;
+  padding: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+}
+.foxsite-footer a {
+  text-decoration: none;
+  color: var(--foxsite-color-gr);
+}
+.foxsite-footer a:hover {
+  text-decoration: underline;
+}
+.foxsite-footer p,
+.foxsite-footer dl,
+.foxsite-footer dt,
+.foxsite-footer dd,
+.foxsite-footer ul,
+.foxsite-footer ol,
+.foxsite-footer li,
+.foxsite-footer figure,
+.foxsite-footer figcaption,
+.foxsite-footer form {
+  margin: 0;
+  padding: 0;
+}
+.foxsite-footer cite,
+.foxsite-footer em,
+.foxsite-footer address {
+  font-style: normal;
+}
+.foxsite-footer .foxsite-footer-top {
+  position: relative;
+  height: 50px;
+}
+.foxsite-footer .foxsite-footer-site {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.foxsite-footer .foxsite-footer-site select {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 50px;
+  padding: 0 40px 0 10px;
+  vertical-align: top;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  background: url("http://down.foxedu.kr/download/foxsite/images/footer/footer-sel-arr.svg") center right no-repeat;
+  font-size: 14px;
+  height: 50px;
+  border: none;
+  border-left: 1px solid var(--foxsite-color-gr80);
+  border-right: 1px solid var(--foxsite-color-gr80);
+  color: var(--foxsite-color-bk);
+}
+.foxsite-footer .foxsite-footer-menu a {
+  line-height: 50px;
+  margin-right: 16px;
+}
+.foxsite-footer .foxsite-footer-menu strong {
+  font-weight: 700;
+}
+.foxsite-footer .foxsite-footer-cont {
+  background-color: var(--foxsite-color-gr50);
+  padding: 30px 0;
+  font-size: 13px;
+}
+.foxsite-footer .foxsite-footer-cs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  float: right;
+  max-width: 300px;
+}
+.foxsite-footer .foxsite-footer-cs cite {
+  font-weight: 700;
+}
+.foxsite-footer .foxsite-footer-cs strong {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.foxsite-footer .foxsite-footer-cs strong:before {
+  content: " ";
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  background: url("http://down.foxedu.kr/download/foxsite/images/footer/footer-ico-cs.svg") no-repeat;
+}
+.foxsite-footer .foxsite-footer-info address {
+  margin-bottom: 5px;
+}
+.foxsite-footer .foxsite-footer-info dl {
+  margin-bottom: 15px;
+}
+.foxsite-footer .foxsite-footer-info dl dt {
+  font-weight: 700;
+}
+.foxsite-footer .foxsite-footer-info dl dd {
+  margin-left: 0;
+  margin-bottom: 5px;
+}
+.foxsite-footer .foxsite-footer-info span {
+  margin-right: 10px;
+  white-space: nowrap;
+}
+.foxsite-footer .foxsite-footer-info span:last-child {
+  margin-right: 0;
+}
+.foxsite-footer .foxsite-footer-info > p {
+  font-size: 12px;
+  color: #999;
+}
+.foxsite-footer .foxsite-footer-logo {
+  display: block;
+  margin: 30px 0 0;
+}
+.foxsite-footer .foxsite-footer-logo img {
+  display: block;
+}
+
+/* -------------------------------------------------    
+	- TABLE MAX-WIDHT 1279	
+------------------------------------------------- */
+@media screen and (max-width: 1279px) {
+  .logo-area {
+    height: 60px;
+  }
+  .logo-area .logo a {
+    height: 25px;
+  }
+  .logo-area.wh .logo a[class^=foxsite-logo] {
+    width: 152px;
+    height: 25px;
+    background-size: auto 25px;
+  }
+  .logo-area.wh .logo .foxsite-logo-foxedu {
+    background-image: url("http://down.foxedu.kr/download/foxsite/images/logo/logo_foxedu.svg");
+  }
+  .logo-area.wh .logo .foxsite-logo-lc {
+    background-image: url("http://down.foxedu.kr/download/foxsite/images/logo/logo_foxlc.svg");
+  }
+  .logo-area.wh .logo .foxsite-logo-story {
+    background-image: url("http://down.foxedu.kr/download/foxsite/images/logo/logo_foxstory.svg");
+  }
+  .logo-area.wh .logo .foxsite-logo-class {
+    background-image: url("http://down.foxedu.kr/download/foxsite/images/logo/logo_foxclass.svg");
+  }
+  .logo-area.wh .logo .foxsite-logo-news {
+    background-image: url("http://down.foxedu.kr/download/foxsite/images/logo/logo_foxnews.svg");
+  }
+  .logo-area.wh .logo .foxsite-logo-store {
+    background-image: url("http://down.foxedu.kr/download/foxsite/images/logo/logo_foxstore.svg");
+  }
+  .logo-area.wh .logo .foxsite-logo-steam {
+    background-image: url("http://down.foxedu.kr/download/foxsite/images/logo/logo_foxsteam.svg");
+  }
+  .logo-area.wh .btn-foxsite-nav-open::before {
+    border-color: var(--foxsite-color-spot);
+  }
+  .foxsite-nav {
+    padding-top: 10px;
+    top: 0;
+    left: -5px;
+  }
+  .foxsite-nav-top {
+    height: 50px;
+  }
+  .foxsite-footer .wrap {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+/* -------------------------------------------------  
+	- MOBILE MAX-WIDHT 767 	
+------------------------------------------------- */
+@media screen and (max-width: 767px) {
+  .logo-area {
+    gap: 0 10px;
+  }
+  .logo-area .logo a {
+    height: 20px;
+  }
+  .logo-area.wh .logo a[class^=foxsite-logo] {
+    width: 122px;
+    height: 20px;
+    background-size: auto 20px;
+  }
+  .foxsite-nav {
+    width: 180px;
+  }
+  .foxsite-nav .label-foxsite-disabled {
+    top: -10px;
+    right: -5px;
+    font-size: 9px;
+  }
+  .btn-foxsite-nav-open,
+  .btn-foxsite-nav-close {
+    width: 24px;
+    height: 24px;
+  }
+  .foxsite-nav-list li ~ li {
+    margin-top: 16px;
+  }
+  [class^=foxsite-logo] {
+    height: 20px;
+    background-size: auto 18px;
+  }
+  .foxsite-nav-top [class^=foxsite-logo] {
+    height: 16px;
+    background-size: auto 16px;
+  }
+  .foxsite-footer .foxsite-footer-site {
+    top: 70px;
+    right: auto;
+    width: calc(100% - 30px);
+  }
+  .foxsite-footer .foxsite-footer-site select {
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+  .foxsite-footer .foxsite-footer-cs {
+    float: none;
+    margin-bottom: 20px;
+  }
+  .foxsite-footer .foxsite-footer-cs strong {
+    font-size: 20px;
+  }
+  .foxsite-footer .foxsite-footer-cs strong img {
+    height: 20px;
+  }
+  .foxsite-footer .foxsite-footer-logo img {
+    height: 20px;
+  }
+}
+/* -------------------------------------------------  
+	- MOBILE MAX-WIDHT 374 	
+------------------------------------------------- */
+@media screen and (max-width: 374px) {
+  .foxsite-nav {
+    width: 70vw;
+  }
+}/*# sourceMappingURL=style_foxsite.css.map */
