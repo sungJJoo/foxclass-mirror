@@ -1,4 +1,4 @@
-<!-- 폭스러닝센터 AI 연구소 소개 페이지 (리플렛 기반, 폭스클래스 양식 참고) -->
+<!-- 폭스러닝센터 AI 연구소 메인 페이지 -->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -11,17 +11,19 @@
 	<meta property="og:title" content="폭스러닝센터 AI 연구소" />
 	<meta property="og:description" content="AI에게 문제를 내는 아이 — AI를 이해하고 소통하고 활용하며 자신만의 결과물을 만들어가는 교육" />
 	<title>AI 연구소 | 폭스러닝센터</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
 	<link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+	<div class="scroll-progress" aria-hidden="true"></div>
 
 	<header class="site-header">
 		<div class="wrap">
 			<h1 class="logo">
-				<a href="#intro">
+				<a href="index.html">
 					<!-- FOX AI 로고 이미지 제작 후 아래 span을 <img src="images/logo-fox-ai.svg" alt="FOX AI 연구소" />로 교체 -->
 					<span class="logo-fox">FOX</span><span class="logo-ai">AI</span>
 					<span class="logo-sub">폭스러닝센터 AI 연구소</span>
@@ -30,55 +32,94 @@
 			<button type="button" class="btn-gnb-open" aria-label="메뉴 열기"><span></span><span></span><span></span></button>
 			<nav class="site-gnb" id="gnb">
 				<ul>
-					<li><a href="#direction">연구소 소개</a></li>
-					<li><a href="#learning">배우는 방법</a></li>
-					<li><a href="#programs">프로그램</a></li>
-					<li><a href="#competition">대회 활동</a></li>
-					<li><a href="#contact" class="gnb-cta">상담 문의</a></li>
+					<li><a href="index.html" aria-current="page">연구소 소개</a></li>
+					<li><a href="learning.html">배우는 방법</a></li>
+					<li><a href="programs.html">프로그램</a></li>
+					<li><a href="competition.html">대회 활동</a></li>
+					<li><a href="contact.html" class="gnb-cta">상담 문의</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 
-	<main class="site-body">
-
+	<main>
 		<!-- 히어로 -->
-		<section class="mn-visual" id="intro">
+		<section class="hero">
+			<i class="orb orb-1" aria-hidden="true"></i>
+			<i class="orb orb-2" aria-hidden="true"></i>
+			<i class="orb orb-3" aria-hidden="true"></i>
 			<div class="wrap">
-				<div class="visual-cont">
-					<div class="txt-area">
-						<cite>폭스러닝센터</cite>
-						<p class="visual-catch">AI에게 문제를 내는 아이</p>
-						<h2>AI 연구소</h2>
-						<p class="visual-desc">
+				<div class="hero-cont">
+					<div class="hero-txt">
+						<p class="hero-tag hero-rise" style="--d:.05s">FOX LEARNING CENTER</p>
+						<p class="hero-catch hero-rise" style="--d:.15s">AI에게 문제를 내는 아이</p>
+						<h2 class="hero-tit hero-rise" style="--d:.25s">
+							<span class="grad-txt">AI 연구소</span>
+						</h2>
+						<p class="hero-desc hero-rise" style="--d:.38s">
 							AI를 이해하고 소통하고 활용하며<br />
 							자신만의 결과물을 만들어가는 교육
 						</p>
-						<div class="btn-area">
-							<a href="#contact" class="btn-lg spot1">상담 문의하기</a>
-							<a href="#programs" class="btn-lg line">프로그램 보기</a>
+						<div class="hero-btns hero-rise" style="--d:.5s">
+							<a href="contact.html" class="btn btn-fill">상담 문의하기 <span class="arr">→</span></a>
+							<a href="programs.html" class="btn btn-ghost">프로그램 보기 <span class="arr">→</span></a>
 						</div>
 					</div>
-					<figure class="img-area">
-						<img src="images/hero.jpg" alt="AI 연구소에서 레고와 AI 도구로 활동하는 아이들" />
-					</figure>
+					<div class="hero-img hero-rise" style="--d:.45s">
+						<figure>
+							<img src="images/hero.jpg" alt="AI 연구소에서 레고와 AI 도구로 활동하는 아이들" />
+						</figure>
+						<span class="hero-chip chip-1"><i></i>PBL PROJECT</span>
+						<span class="hero-chip chip-2"><i></i>LEGO · MINECRAFT · PYTHON</span>
+					</div>
+				</div>
+			</div>
+			<div class="hero-stats">
+				<div class="wrap">
+					<ul>
+						<li>
+							<p class="stat-num"><span class="count" data-count="4">0</span><em>개</em></p>
+							<p class="stat-label">대표 프로그램 영역</p>
+						</li>
+						<li>
+							<p class="stat-num"><span class="count" data-count="14">0</span><em>+</em></p>
+							<p class="stat-label">맞춤형 활동 프로그램</p>
+						</li>
+						<li>
+							<p class="stat-num"><span class="count" data-count="5">0</span><em>단계</em></p>
+							<p class="stat-label">PBL 프로젝트 학습</p>
+						</li>
+						<li>
+							<p class="stat-num"><span class="count" data-count="7">0</span><em>회</em></p>
+							<p class="stat-label">대회 수상 (2023~2026)</p>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</section>
 
+		<!-- 키워드 마르키 -->
+		<div class="marquee" aria-hidden="true">
+			<div class="marquee-track">
+				<span>AI Literacy</span><span>LEGO Education</span><span>Minecraft Coding</span><span>Python</span><span>Scratch</span><span>Generative AI</span><span>FLL Explore</span><span>STEAM</span>
+				<span>AI Literacy</span><span>LEGO Education</span><span>Minecraft Coding</span><span>Python</span><span>Scratch</span><span>Generative AI</span><span>FLL Explore</span><span>STEAM</span>
+			</div>
+		</div>
+
 		<!-- 활동 방향 4가지 -->
-		<section class="mn-section sec-direction" id="direction">
+		<section class="mn-section">
 			<div class="wrap">
-				<header class="mn-tit-area">
-					<cite>AI 연구소의 활동 방향</cite>
-					<h2 class="mn-tit">AI와 함께 새로운 가치를<br />만드는 아이</h2>
-					<p class="mn-tit-desc">
+				<header class="sec-head center reveal">
+					<p class="overline">Direction</p>
+					<h2 class="sec-tit">AI와 함께 <span class="grad-txt">새로운 가치</span>를<br />만드는 아이</h2>
+					<p class="sec-desc">
 						FOX AI연구소는 AI를 올바르게 이해하고 활용하는 능력을 통해<br class="pc-only" />
 						질문하는 힘, 창의적 사고, 디지털 윤리까지 함께 성장할 수 있습니다.
 					</p>
 				</header>
-				<ul class="direction-list">
+				<ul class="direction-list" data-stagger>
 					<li class="c-teal">
+						<span class="dir-no">01</span>
 						<i class="dir-ico" aria-hidden="true">
 							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/><circle cx="12" cy="12" r="2.2"/></svg>
 						</i>
@@ -86,6 +127,7 @@
 						<p>AI와 디지털 도구의 원리를 이해하고 올바르게 판단하기</p>
 					</li>
 					<li class="c-blue">
+						<span class="dir-no">02</span>
 						<i class="dir-ico" aria-hidden="true">
 							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
 						</i>
@@ -93,6 +135,7 @@
 						<p>AI에게 원하는 결과물을 정확하게 전달하며 효과적으로 소통하기</p>
 					</li>
 					<li class="c-purple">
+						<span class="dir-no">03</span>
 						<i class="dir-ico" aria-hidden="true">
 							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
 						</i>
@@ -100,6 +143,7 @@
 						<p>문제를 해결하기 위해 AI 기술과 디지털 도구 활용하기</p>
 					</li>
 					<li class="c-yellow">
+						<span class="dir-no">04</span>
 						<i class="dir-ico" aria-hidden="true">
 							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.2 1 2V17h6v-.3c0-.8.4-1.5 1-2A7 7 0 0 0 12 2z"/></svg>
 						</i>
@@ -110,443 +154,102 @@
 			</div>
 		</section>
 
-		<!-- AI연구소의 특징 -->
+		<!-- 특징 5 -->
 		<section class="mn-section sec-feature">
 			<div class="wrap">
-				<header class="mn-tit-area">
-					<cite>AI연구소의 특징</cite>
-					<h2 class="mn-tit">질문하는 힘과 창의적 사고를<br />키우는 다섯 가지 약속</h2>
-				</header>
-				<ol class="feature-list">
-					<li>
-						<span class="num">01</span>
-						<h3>컴퓨터 과학 기반<br />AI 융합 교육</h3>
-					</li>
-					<li>
-						<span class="num">02</span>
-						<h3>프로젝트 기반(PBL)<br />문제 해결 활동</h3>
-					</li>
-					<li>
-						<span class="num">03</span>
-						<h3>생성형 AI 활용<br />창작 활동</h3>
-					</li>
-					<li>
-						<span class="num">04</span>
-						<h3>레고·마인크래프트·파이썬<br />기반 디지털 제작 경험</h3>
-					</li>
-					<li>
-						<span class="num">05</span>
-						<h3>협력·소통·발표를 통한<br />역량 강화</h3>
-					</li>
-				</ol>
-				<figure class="feature-photo">
-					<img src="images/classroom.jpg" alt="AI 연구소 수업 발표 모습" />
-				</figure>
-			</div>
-		</section>
-
-		<!-- 배우는 방법 (PBL 5단계) -->
-		<section class="mn-section sec-learning" id="learning">
-			<div class="wrap">
-				<header class="mn-tit-area">
-					<cite>FOX AI 연구소는 이렇게 배웁니다</cite>
-					<h2 class="mn-tit">프로젝트 기반 학습,<br />다섯 단계의 성장 여정</h2>
-					<p class="mn-tit-desc">
-						질문과 탐구를 시작으로 코딩, 데이터, 디지털 도구를 활용하여 문제를 해결하고<br class="pc-only" />
-						창의적으로 표현하는 프로젝트 기반 학습(PBL)을 진행합니다.
-					</p>
-				</header>
-				<ol class="step-list">
-					<li>
-						<div class="step-head">
-							<span class="step-num">STEP 1</span>
-							<h3>시작하기 <small>주제 이해</small></h3>
-						</div>
-						<p>주제 이해, 문제 발견, 팀 구성, 역할 나누기</p>
-						<span class="step-tag">SEL — 협력 · 의사소통 · 공감</span>
-					</li>
-					<li>
-						<div class="step-head">
-							<span class="step-num">STEP 2</span>
-							<h3>계획하기 <small>아이디어 탐색</small></h3>
-						</div>
-						<p>아이디어 브레인스토밍, 해결 방법 탐색, 자료 조사, 디지털 도구 선택</p>
-						<span class="step-tag">AI — 기초 코딩 · 문제 이해</span>
-					</li>
-					<li>
-						<div class="step-head">
-							<span class="step-num">STEP 3</span>
-							<h3>조사 및 구조 만들기</h3>
-						</div>
-						<p>코딩 구조 만들기, 레고 모델링, 게임 설계, AI 활용 구조 만들기</p>
-						<span class="step-tag">STEAM — 과학 · 기술 · 공학 · 예술 · 수학</span>
-					</li>
-					<li>
-						<div class="step-head">
-							<span class="step-num">STEP 4</span>
-							<h3>모델 제작 <small>실행하기</small></h3>
-						</div>
-						<p>블록코딩 · 파이썬, 로봇 제어, AI 창작, 게임 제작, 마인크래프트 프로젝트</p>
-						<span class="step-tag">PBL — 프로젝트 기반 문제 해결</span>
-					</li>
-					<li>
-						<div class="step-head">
-							<span class="step-num">STEP 5</span>
-							<h3>발표 및 성장 <small>공유와 성장</small></h3>
-						</div>
-						<p>결과 발표, 피드백 공유, 수정 및 보완, 자기 성찰</p>
-						<span class="step-tag">성장 — 학습 성찰 · 자신감 향상</span>
-					</li>
-				</ol>
-			</div>
-		</section>
-
-		<!-- 대표 프로그램 4가지 영역 -->
-		<section class="mn-section sec-area" id="programs">
-			<div class="wrap">
-				<header class="mn-tit-area">
-					<cite>AI 연구소의 대표 프로그램 4가지 영역</cite>
-					<h2 class="mn-tit">다양한 도구와 프로젝트 활동으로<br />AI 시대 핵심 역량을 키웁니다</h2>
-				</header>
-				<div class="area-grid">
-					<article class="area-card c-teal">
-						<figure><img src="images/area-understand.jpg" alt="노트북으로 AI 원리를 배우는 학생" /></figure>
-						<div class="area-cont">
-							<h3>AI 이해</h3>
-							<p>AI와 친해지고 컴퓨팅 사고력을 기르는 과정</p>
-							<ul>
-								<li>키보드와 친해지기</li>
-								<li>비버챌린지</li>
-								<li>생성형 AI 활용 <em class="adult" title="성인 대상으로도 가능한 프로그램">★</em></li>
-								<li>COS 도전단</li>
-								<li>컴퓨터 스킬</li>
-							</ul>
-						</div>
-					</article>
-					<article class="area-card c-blue">
-						<figure><img src="images/area-communicate.jpg" alt="태블릿으로 디지털 표현을 배우는 학생" /></figure>
-						<div class="area-cont">
-							<h3>AI 소통</h3>
-							<p>코딩 언어와 디지털 표현을 배우는 과정</p>
-							<ul>
-								<li>파이썬 기초 <em class="adult" title="성인 대상으로도 가능한 프로그램">★</em></li>
-								<li>어린이 스크래치</li>
-								<li>어린이 스크래치 코딩</li>
-								<li>어린이 스크래치 친해지기</li>
-							</ul>
-						</div>
-					</article>
-					<article class="area-card c-purple">
-						<figure><img src="images/area-utilize.jpg" alt="레고 로봇으로 문제를 해결하는 학생들" /></figure>
-						<div class="area-cont">
-							<h3>AI 활용</h3>
-							<p>AI와 다양한 도구로 문제를 해결하는 과정</p>
-							<ul>
-								<li>LEGO Education</li>
-								<li>레고 STEM 실험실 <em class="adult" title="성인 대상으로도 가능한 프로그램">★</em></li>
-								<li>마인크래프트 Education <em class="adult" title="성인 대상으로도 가능한 프로그램">★</em></li>
-								<li>NASA Kids</li>
-								<li>Engineering Kids</li>
-								<li>딥레이서</li>
-							</ul>
-						</div>
-					</article>
-					<article class="area-card c-yellow">
-						<figure><img src="images/area-create.jpg" alt="프로젝트 결과물을 발표하는 학생들" /></figure>
-						<div class="area-cont">
-							<h3>AI 창작</h3>
-							<p>AI를 활용해 나만의 결과물을 만드는 과정</p>
-							<ul>
-								<li>AI 포스터 제작</li>
-								<li>AI 애니메이션 제작</li>
-								<li>AI 음악 만들기</li>
-								<li>웹 리포트 제작</li>
-								<li>스크래치 게임 제작 <em class="adult" title="성인 대상으로도 가능한 프로그램">★</em></li>
-								<li>FLL 대비반</li>
-							</ul>
-						</div>
-					</article>
-				</div>
-				<p class="adult-note"><em class="adult">★</em> 성인 대상으로도 가능한 프로그램입니다.</p>
-			</div>
-		</section>
-
-		<!-- 14가지 활동 프로그램 -->
-		<section class="mn-section sec-activity">
-			<div class="wrap">
-				<header class="mn-tit-area">
-					<cite>AI 연구소와 함께하는 14가지 활동 프로그램</cite>
-					<h2 class="mn-tit">인공지능 · 코딩 · 수학을 융합한<br />맞춤형 프로그램</h2>
-					<p class="mn-tit-desc">
-						AI 연구소에서는 인공지능, 코딩, 수학 등을 융합한 다양한 프로그램을 개발 및 운영하고 있으며,
-						AI의 원리를 이해하고 효과적으로 소통하며 문제를 해결하고 자신만의 아이디어를 결과물로
-						나타낼 수 있도록 다양한 디지털 도구를 활동 자료로 활용하고 있습니다.
-					</p>
-				</header>
-				<div class="activity-table-area">
-					<table class="activity-table">
-						<colgroup>
-							<col class="col-no" /><col class="col-target" /><col class="col-name" /><col class="col-desc" /><col class="col-photo" />
-						</colgroup>
-						<thead>
-							<tr>
-								<th scope="col">No</th>
-								<th scope="col">추천 대상</th>
-								<th scope="col">활동명</th>
-								<th scope="col">활동 내용</th>
-								<th scope="col">활동 사진</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td class="no">1</td>
-								<td class="target">유아</td>
-								<td class="name">어린이 스크래치 친해지기</td>
-								<td class="desc">스크래치 주니어, 스크래치에서 사용되는 기능과 조작 방식을 탐색하고 다양한 동화 속 문제를 파악하여 해결 방안을 블록 코딩으로 구현해보는 활동</td>
-								<td class="photo"><img src="images/act01.jpg" alt="어린이 스크래치 친해지기 활동" loading="lazy" /></td>
-							</tr>
-							<tr>
-								<td class="no">2</td>
-								<td class="target">유아,<br />초등 저학년<br />(1~3학년)</td>
-								<td class="name">즐거운 레고 실험실</td>
-								<td class="desc">브릭큐 모션 에센셜의 기본 학습 단원을 활용하여 다양한 과학 원리들을 직접 실험할 수 있는 활동</td>
-								<td class="photo"><img src="images/act02.jpg" alt="즐거운 레고 실험실 활동" loading="lazy" /></td>
-							</tr>
-							<tr>
-								<td class="no">3</td>
-								<td class="target">유아,<br />초등 저·고학년<br />(1~6학년)</td>
-								<td class="name">레고 튜토리얼</td>
-								<td class="desc">스파이크 에센셜의 기본 학습 단원을 활용하여 레고 코딩에 꼭 필요한 테크니컬 부품의 사용 방식을 경험하며 익힐 수 있는 활동</td>
-								<td class="photo"><img src="images/act03.jpg" alt="레고 튜토리얼 활동" loading="lazy" /></td>
-							</tr>
-							<tr>
-								<td class="no">4</td>
-								<td class="target">초등 저·고학년<br />(1~6학년)</td>
-								<td class="name">레고로 키우는 문제 해결의 힘</td>
-								<td class="desc">기본 학습 단원을 1번 이상 끝낸 학생들을 대상으로 주제에 맞춰 문제를 해결할 수 있도록 기본 모델을 변형하고 코딩을 확장해보는 활동</td>
-								<td class="photo"><img src="images/act04.jpg" alt="레고로 키우는 문제 해결의 힘 활동" loading="lazy" /></td>
-							</tr>
-							<tr>
-								<td class="no">5</td>
-								<td class="target">초등 저·고학년<br />(1~6학년) <em class="adult">★</em></td>
-								<td class="name">레고 STEM 실험실</td>
-								<td class="desc">스파이크 프라임의 기본 학습 단원을 통해 로보틱스 기술과 더불어 수학, 공학, 기술적 사고를 확장시킬 수 있는 활동</td>
-								<td class="photo"><img src="images/act05.jpg" alt="레고 STEM 실험실 활동" loading="lazy" /></td>
-							</tr>
-							<tr>
-								<td class="no">6</td>
-								<td class="target">초등 저·고학년<br />(1~6학년)</td>
-								<td class="name">스크래치로 코딩과 친해지기</td>
-								<td class="desc">스크래치를 통해 다양한 창작활동을 접하고 조건문·루프문·변수 등 블록 코딩 개념을 쉽게 이해할 수 있는 활동</td>
-								<td class="photo"><img src="images/act06.jpg" alt="스크래치로 코딩과 친해지기 활동" loading="lazy" /></td>
-							</tr>
-							<tr>
-								<td class="no">7</td>
-								<td class="target">초등 저·고학년<br />(1~6학년) <em class="adult">★</em></td>
-								<td class="name">스크래치로 게임 만들기</td>
-								<td class="desc">게임의 구성요소와 설계방법을 알아보고 다양한 구현 방식과 메커니즘을 탐구하여 나만의 게임을 설계·제작하는 활동</td>
-								<td class="photo"><img src="images/act07.jpg" alt="스크래치로 게임 만들기 활동" loading="lazy" /></td>
-							</tr>
-							<tr>
-								<td class="no">8</td>
-								<td class="target">초등 저학년<br />(1~3학년) <em class="adult">★</em></td>
-								<td class="name">마인크래프트 Coding<br />: 우리의 세상 만들기</td>
-								<td class="desc">마인크래프트 에듀케이션에서 블록코딩으로 우리의 세상을 만드는 팀 프로젝트 활동</td>
-								<td class="photo"><img src="images/act08.jpg" alt="마인크래프트 우리의 세상 만들기 활동" loading="lazy" /></td>
-							</tr>
-							<tr>
-								<td class="no">9</td>
-								<td class="target">초등 저·고학년<br />(1~6학년) <em class="adult">★</em></td>
-								<td class="name">마인크래프트 Coding<br />: 마을을 지켜라</td>
-								<td class="desc">마인크래프트 에듀케이션에서 직업별로 코딩을 나누어 협업하는 PBL/SEL 기반 활동</td>
-								<td class="photo"><img src="images/act09.jpg" alt="마인크래프트 마을을 지켜라 활동" loading="lazy" /></td>
-							</tr>
-							<tr>
-								<td class="no">10</td>
-								<td class="target">초등 저·고학년<br />(1~6학년) <em class="adult">★</em></td>
-								<td class="name">마인크래프트 Coding<br />: 에이전트와 함께해요</td>
-								<td class="desc">마인크래프트 에듀케이션에서 에이전트를 움직이는 코드를 만들고 수정하며 문제를 해결하는 코딩 활동</td>
-								<td class="photo"><img src="images/act10.jpg" alt="마인크래프트 에이전트와 함께해요 활동" loading="lazy" /></td>
-							</tr>
-							<tr>
-								<td class="no">11</td>
-								<td class="target">초등 고학년<br />(5~6학년), 중학생 <em class="adult">★</em></td>
-								<td class="name">파이썬 기초</td>
-								<td class="desc">파이썬의 기본 문법과 명령 구조를 배우며 코딩을 통해 파이썬의 기초를 익히는 활동</td>
-								<td class="photo"><img src="images/act11.jpg" alt="파이썬 기초 활동" loading="lazy" /></td>
-							</tr>
-							<tr>
-								<td class="no">12</td>
-								<td class="target">유아~고학년 전체 <em class="adult">★</em></td>
-								<td class="name">생성형 AI 활용</td>
-								<td class="desc">주제에 따라 GPT를 활용하여 글쓰기·토론·그림 그리기 등을 진행하는 활동</td>
-								<td class="photo"><img src="images/act12.jpg" alt="생성형 AI 활용 활동" loading="lazy" /></td>
-							</tr>
-							<tr>
-								<td class="no">13</td>
-								<td class="target">초등 3학년 이상 <em class="adult">★</em></td>
-								<td class="name">알수잇다!</td>
-								<td class="desc">수학 문제를 직접 풀고, 알고리즘으로 정리한 뒤 코딩으로 표현하여 수학 개념과 논리적 문제 해결 과정을 경험하는 활동</td>
-								<td class="photo"><img src="images/act13.jpg" alt="알수잇다 활동" loading="lazy" /></td>
-							</tr>
-							<tr>
-								<td class="no">14</td>
-								<td class="target">초등 2학년 이상 <em class="adult">★</em></td>
-								<td class="name">AI·디지털 문화유산과<br />떠나는 역사 여행!</td>
-								<td class="desc">AI·디지털 기술로 우리 문화유산을 탐구하고 보존·복원 과정을 체험하며 역사와 미래 기술을 이해하는 활동</td>
-								<td class="photo"><img src="images/act14.jpg" alt="AI 디지털 문화유산 역사 여행 활동" loading="lazy" /></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<p class="adult-note"><em class="adult">★</em> 성인 대상으로도 가능한 프로그램입니다.</p>
-			</div>
-		</section>
-
-		<!-- 대회 활동 -->
-		<section class="mn-section sec-competition" id="competition">
-			<div class="wrap">
-				<header class="mn-tit-area">
-					<cite>AI 연구소와 함께하는 대회 활동 프로그램</cite>
-					<h2 class="mn-tit">문제 발견부터 발표까지,<br />대회로 완성하는 성장 경험</h2>
-					<p class="mn-tit-desc">
-						프로젝트 기반 학습(PBL)을 중심으로 다양한 활동 및 대회 프로그램에 도전하고 참여합니다.<br class="pc-only" />
-						창의적 문제 해결, 협업 역량을 높이기 위해 문제 발견부터 결과물 제작, 발표까지의 경험을 제공합니다.
-					</p>
-				</header>
-
-				<div class="comp-grid">
-					<article class="comp-card">
-						<figure><img src="images/comp-fll.jpg" alt="FLL 도전반 레고 모델 제작 활동" loading="lazy" /></figure>
-						<div class="comp-cont">
-							<span class="comp-target">8세 ~ 12세</span>
-							<h3>FLL 도전반</h3>
-							<p>FLL 대회를 준비하기 위한 팀 활동<br />(엔지니어링 노트북 활동지 대체)</p>
-						</div>
-					</article>
-					<article class="comp-card">
-						<figure><img src="images/comp-sci.jpg" alt="무한상상 과학탐구대회 참가 모습" loading="lazy" /></figure>
-						<div class="comp-cont">
-							<span class="comp-target">13세</span>
-							<h3>무한상상 과학탐구대회 도전반</h3>
-							<p>무한상상 과학 탐구대회를 준비하기 위해<br />아이디어와 토론 연습을 하는 팀 기반 협력 활동</p>
-						</div>
-					</article>
-				</div>
-				<p class="adult-note"><em class="adult">★</em> 성인 대상으로도 가능한 프로그램입니다.</p>
-
-				<div class="award-area">
-					<figure class="award-photo">
-						<img src="images/award.jpg" alt="대회 수상 기념 단체 사진" loading="lazy" />
-					</figure>
-					<div class="award-cont">
-						<h3>대회 활동 수상 내역</h3>
-						<ul class="award-list">
-							<li><strong>2023 FLL</strong><span>효과적인 솔루션 상</span></li>
-							<li><strong>2024 FLL EXPLORE</strong><span>혁신적인 아이디어 상</span></li>
-							<li><strong>2025 FLL EXPLORE</strong><span>뛰어난 팀웍 상 · 혁신적인 아이디어 상</span></li>
-							<li><strong>2026 FLL EXPLORE</strong><span>효과적인 솔루션 상 · 훌륭한 발표 상</span></li>
-							<li><strong>2025 무한상상과학탐구대회</strong><span>장려상</span></li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="award-detail">
-					<article>
-						<h4>FLL Explore</h4>
-						<dl>
-							<dt>훌륭한 발표 상</dt>
-							<dd>아이들이 시즌 주제를 탐구한 내용을 스스로 설명하고 아이디어를 논리적으로 전달하여 수상</dd>
-							<dt>효과적인 솔루션 상</dt>
-							<dd>아이들이 시즌 주제에 맞게 문제를 발견하고 창의적인 해결 방안을 레고로 설계하여 수상</dd>
-							<dt>뛰어난 팀웍 상</dt>
-							<dd>각자의 생각을 나누고 협력하여 아이디어를 발전시킨 모델 제작 과정이 우수하여 수상</dd>
-							<dt>혁신적인 아이디어 상</dt>
-							<dd>새로운 관점에서 문제를 탐색하고 창의적인 해결 아이디어를 바탕으로 모델을 조립하여 수상</dd>
-						</dl>
-					</article>
-					<article>
-						<h4>무한상상 과학 탐구 서바이벌 대회</h4>
-						<dl>
-							<dt>장려상</dt>
-							<dd>교통약자의 이동 문제를 탐구하고 AI 기반 스마트 휠체어 아이디어를 설계하여 창의적 문제 해결 역량을 인정받아 수상</dd>
-						</dl>
-					</article>
+				<div class="feature-flex">
+					<header class="sec-head reveal">
+						<p class="overline">Why FOX AI Lab</p>
+						<h2 class="sec-tit">다섯 가지<br /><span class="grad-txt">약속</span></h2>
+						<p class="sec-desc">AI 시대를 살아갈 아이들에게 꼭 필요한 경험을 약속합니다.</p>
+						<figure class="feature-photo">
+							<img src="images/classroom.jpg" alt="AI 연구소 수업 발표 모습" loading="lazy" />
+						</figure>
+					</header>
+					<ol class="feature-list" data-stagger>
+						<li>
+							<span class="num">01</span>
+							<h3>컴퓨터 과학 기반 AI 융합 교육</h3>
+						</li>
+						<li>
+							<span class="num">02</span>
+							<h3>프로젝트 기반(PBL) 문제 해결 활동</h3>
+						</li>
+						<li>
+							<span class="num">03</span>
+							<h3>생성형 AI 활용 창작 활동</h3>
+						</li>
+						<li>
+							<span class="num">04</span>
+							<h3>레고·마인크래프트·파이썬 기반 디지털 제작 경험</h3>
+						</li>
+						<li>
+							<span class="num">05</span>
+							<h3>협력·소통·발표를 통한 역량 강화</h3>
+						</li>
+					</ol>
 				</div>
 			</div>
 		</section>
 
-		<!-- 프로그램 포스터 -->
-		<section class="mn-section sec-poster">
+		<!-- 더 알아보기 (서브페이지 안내) -->
+		<section class="mn-section">
 			<div class="wrap">
-				<header class="mn-tit-area">
-					<cite>AI 연구소 프로그램 포스터</cite>
-					<h2 class="mn-tit">연구소의 프로그램을<br />포스터로 만나보세요</h2>
+				<header class="sec-head center reveal">
+					<p class="overline">Explore</p>
+					<h2 class="sec-tit">AI 연구소를 <span class="grad-txt">더 깊이</span> 알아보세요</h2>
 				</header>
-				<ul class="poster-list">
-					<li>
-						<figure><img src="images/poster-world.jpg" alt="FOX가 만드는 AI 세상 포스터" loading="lazy" /></figure>
-						<p>우리가 만드는 세상</p>
-					</li>
-					<li>
-						<figure><img src="images/poster-village.jpg" alt="마을을 지켜라 포스터" loading="lazy" /></figure>
-						<p>마을을 지켜라</p>
-					</li>
-					<li>
-						<figure><img src="images/poster-agent.jpg" alt="에이전트와 함께해요 포스터" loading="lazy" /></figure>
-						<p>에이전트와 함께해요</p>
-					</li>
-					<li>
-						<figure><img src="images/poster-ai.jpg" alt="AI와 친해지기 첫발자국 포스터" loading="lazy" /></figure>
-						<p>AI와 친해지기 첫발자국</p>
-					</li>
-					<li>
-						<figure><img src="images/poster-math.jpg" alt="알고리즘과 수학을 잇다 포스터" loading="lazy" /></figure>
-						<p>알수잇다!</p>
-					</li>
-				</ul>
-			</div>
-		</section>
-
-		<!-- 대상 및 상담 문의 -->
-		<section class="mn-section sec-contact" id="contact">
-			<div class="wrap">
-				<header class="mn-tit-area">
-					<cite>대상 및 상담 문의</cite>
-					<h2 class="mn-tit">우리 아이에게 맞는 과정,<br />지금 바로 상담해 보세요</h2>
-				</header>
-				<div class="target-banner">
-					<h3>교육 대상</h3>
-					<p><strong>유아(6세 이상) · 초등 · 중등 · 고등</strong> 수준별 맞춤 운영 / <strong>성인 및 기관 연수</strong> 가능</p>
-					<small>* 체험 프로그램 신청 및 단체 교육은 문의해 주세요.</small>
+				<div class="explore-grid" data-stagger>
+					<a href="learning.html" class="explore-card">
+						<img src="images/act03.jpg" alt="" loading="lazy" />
+						<div class="explore-cont">
+							<p class="overline">Learning</p>
+							<h3>배우는 방법</h3>
+							<p>질문과 탐구로 시작하는 PBL 5단계 학습 여정</p>
+							<span class="explore-more">VIEW MORE <span class="arr">→</span></span>
+						</div>
+					</a>
+					<a href="programs.html" class="explore-card">
+						<img src="images/area-utilize.jpg" alt="" loading="lazy" />
+						<div class="explore-cont">
+							<p class="overline">Programs</p>
+							<h3>프로그램</h3>
+							<p>4가지 영역, 14가지 맞춤형 활동 프로그램</p>
+							<span class="explore-more">VIEW MORE <span class="arr">→</span></span>
+						</div>
+					</a>
+					<a href="competition.html" class="explore-card">
+						<img src="images/award.jpg" alt="" loading="lazy" />
+						<div class="explore-cont">
+							<p class="overline">Competition</p>
+							<h3>대회 활동</h3>
+							<p>FLL부터 과학탐구대회까지, 도전으로 완성하는 성장</p>
+							<span class="explore-more">VIEW MORE <span class="arr">→</span></span>
+						</div>
+					</a>
 				</div>
-				<ul class="contact-list">
-					<li>
-						<i class="ct-ico" aria-hidden="true">
-							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-						</i>
-						<h3>전화 상담</h3>
-						<p><a href="tel:1433-2700">1433-2700</a></p>
-					</li>
-					<li>
-						<i class="ct-ico" aria-hidden="true">
-							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3C6.5 3 2 6.6 2 11c0 2.8 1.9 5.3 4.7 6.7L6 21l3.8-2.3c.7.1 1.4.2 2.2.2 5.5 0 10-3.6 10-8s-4.5-8-10-8z"/></svg>
-						</i>
-						<h3>카카오톡 상담</h3>
-						<p>채널 <strong>FOX_LC</strong></p>
-					</li>
-					<li>
-						<i class="ct-ico" aria-hidden="true">
-							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-						</i>
-						<h3>오시는 길</h3>
-						<p>대전광역시 유성구 엑스포로97번길 40,<br />2층 폭스러닝센터</p>
-					</li>
-				</ul>
-				<p class="contact-slogan">"AI와 함께 새로운 가치를 만드는 아이, <strong>AI연구소</strong>가 함께 합니다."</p>
 			</div>
 		</section>
 
+		<!-- 슬로건 -->
+		<section class="slogan-band">
+			<div class="wrap reveal">
+				<q>AI와 함께 새로운 가치를 만드는 아이,<br /><strong class="grad-txt">AI연구소</strong><strong>가 함께 합니다</strong></q>
+			</div>
+		</section>
+
+		<!-- CTA -->
+		<section class="cta-band">
+			<div class="wrap">
+				<p class="overline">Contact</p>
+				<h2>우리 아이에게 맞는 과정,<br />지금 바로 상담해 보세요</h2>
+				<p>유아(6세 이상)부터 성인·기관 연수까지 수준별 맞춤 운영</p>
+				<div class="cta-btns">
+					<a href="tel:1433-2700" class="btn btn-fill">전화 1433-2700</a>
+					<a href="contact.html" class="btn btn-ghost">상담 안내 보기 <span class="arr">→</span></a>
+				</div>
+			</div>
+		</section>
 	</main>
 
 	<footer class="foxsite-footer">
@@ -575,28 +278,6 @@
 		</div>
 	</footer>
 
-	<script>
-		// 모바일 메뉴 토글과 부드러운 스크롤 이동
-		(function () {
-			var btn = document.querySelector('.btn-gnb-open');
-			var gnb = document.getElementById('gnb');
-			btn.addEventListener('click', function () {
-				document.body.classList.toggle('gnb-opened');
-			});
-			gnb.addEventListener('click', function (e) {
-				if (e.target.tagName === 'A') document.body.classList.remove('gnb-opened');
-			});
-			document.querySelectorAll('a[href^="#"]').forEach(function (a) {
-				a.addEventListener('click', function (e) {
-					var target = document.querySelector(a.getAttribute('href'));
-					if (target) {
-						e.preventDefault();
-						var headerH = document.querySelector('.site-header').offsetHeight;
-						window.scrollTo({ top: target.getBoundingClientRect().top + window.pageYOffset - headerH, behavior: 'smooth' });
-					}
-				});
-			});
-		})();
-	</script>
+	<script src="js/common.js"></script>
 </body>
 </html>
