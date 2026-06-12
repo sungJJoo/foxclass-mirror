@@ -5,3 +5,8 @@ cookies.txt
 Thumbs.db
 .DS_Store
 desktop.ini
+
+# 로컬 작업 노트 및 도구 설정
+checklist.md
+context-notes.md
+.claude/
