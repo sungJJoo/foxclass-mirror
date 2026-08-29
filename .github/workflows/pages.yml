@@ -1,17 +1,17 @@
-# 리포 전체를 GitHub Pages로 배포한다.
-# 배포 후 접근 경로
-#   /                → HTTrack 미러 (루트 index.html이 class.foxconnect.kr/ 로 이동)
-#   /wsu-neulbom/    → 우송대학교 WISE 늘봄
-#   /fox-ai-lab/     → 폭스러닝센터 AI 연구소
+# wsu-neulbom/ 폴더만 GitHub Pages로 배포한다.
+# 리포에 함께 있는 HTTrack 미러와 fox-ai-lab 은 배포 대상에서 제외된다.
 #
 # 사용 전 준비: Settings → Pages → Build and deployment → Source 를 "GitHub Actions" 로 변경
-name: Deploy to GitHub Pages
+name: Deploy WISE Neulbom site
 
 on:
   push:
     branches:
       - main
       - claude/mokwon-wise-site-clone-9ew9ge
+    paths:
+      - 'wsu-neulbom/**'
+      - '.github/workflows/pages.yml'
   workflow_dispatch:
 
 permissions:
@@ -38,10 +38,10 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: 정적 파일 업로드
-        # Jekyll 빌드 없이 리포 내용을 그대로 올린다 (.git, .github 는 자동 제외)
+        # wsu-neulbom/ 내용을 사이트 루트로 올린다 (Jekyll 빌드 없음)
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: wsu-neulbom
 
       - name: 배포
         id: deployment
