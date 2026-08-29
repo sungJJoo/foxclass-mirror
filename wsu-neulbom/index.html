@@ -1,0 +1,467 @@
+<!-- 우송대학교 WISE 늘봄 메인 페이지 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="우송대학교 WISE 늘봄 - 대전 지역 초등학교와 함께하는 대학연계 늘봄학교 프로그램. AI·SW, 과학·수학, 예술·체육, 글로벌·언어, 인성·진로 5개 분야 운영." />
+	<meta name="keywords" content="우송대학교, WISE 늘봄, 늘봄학교, 대학연계 늘봄, 대전 늘봄, 방과후 프로그램, 초등 돌봄" />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="우송대학교 WISE 늘봄" />
+	<meta property="og:title" content="우송대학교 WISE 늘봄" />
+	<meta property="og:description" content="우송대학교 WISE 늘봄 - 대전 지역 초등학교와 함께하는 대학연계 늘봄학교 프로그램. AI·SW, 과학·수학, 예술·체육, 글로벌·언어, 인성·진로 5개 분야 운영." />
+	<title>우송대학교 WISE 늘봄</title>
+	<link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<a class="skip" href="#content">본문 바로가기</a>
+
+	<!-- 아이콘 스프라이트 -->
+	<svg class="blind" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+		<defs>
+			<g id="i-book" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4.5h6a3 3 0 0 1 3 3V21a2.5 2.5 0 0 0-2.5-2.5H4z"/><path d="M20 4.5h-6a3 3 0 0 0-3 3V21a2.5 2.5 0 0 1 2.5-2.5H20z"/></g>
+			<g id="i-edit" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3H5.5A2.5 2.5 0 0 0 3 5.5v13A2.5 2.5 0 0 0 5.5 21h13a2.5 2.5 0 0 0 2.5-2.5V12"/><path d="M18.4 3.6a2 2 0 0 1 2.8 2.8L12.6 15H9.8v-2.8z"/></g>
+			<g id="i-user" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.6"/><path d="M4.5 20.2a7.5 7.5 0 0 1 15 0"/></g>
+			<g id="i-image" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><circle cx="8.6" cy="10" r="1.7"/><path d="m3.6 17.4 4.6-4.3 3.5 3.2 3.4-3.4 5.3 5"/></g>
+			<g id="i-chat" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.2c0 4.1-4 7.4-9 7.4a10 10 0 0 1-2.6-.34L4.4 21l1.2-3.6A6.9 6.9 0 0 1 3 12.2C3 8.1 7 4.8 12 4.8s9 3.3 9 7.4Z"/></g>
+			<g id="i-cal" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2.5"/><path d="M3 10h18M8 3v4M16 3v4"/></g>
+			<g id="i-down" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5v12M7.5 11.2 12 15.7l4.5-4.5M4 19.5h16"/></g>
+			<g id="i-pin" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></g>
+			<g id="i-phone" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.4 3.5h3l1.5 4-2 1.4a12 12 0 0 0 6.2 6.2l1.4-2 4 1.5v3a2 2 0 0 1-2.2 2A16.6 16.6 0 0 1 4.4 5.7a2 2 0 0 1 2-2.2Z"/></g>
+			<g id="i-mail" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.8 7 7.1 5.4a1.8 1.8 0 0 0 2.2 0L20.2 7"/></g>
+			<g id="i-ai" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6.5" y="6.5" width="11" height="11" rx="2.6"/><path d="M10 10.5h4v3h-4z"/><path d="M9.5 3v3.5M14.5 3v3.5M9.5 17.5V21M14.5 17.5V21M3 9.5h3.5M3 14.5h3.5M17.5 9.5H21M17.5 14.5H21"/></g>
+			<g id="i-flask" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 3h5M10.5 3v6L5.2 17.6A2.4 2.4 0 0 0 7.2 21h9.6a2.4 2.4 0 0 0 2-3.4L13.5 9V3"/><path d="M7.6 14.5h8.8"/></g>
+			<g id="i-art" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 0 0 0 18c1.3 0 2-.9 2-1.9 0-1.3-1.2-1.7-1.2-2.8 0-.8.7-1.4 1.6-1.4H16a5 5 0 0 0 5-5C21 6 17 3 12 3Z"/><circle cx="8" cy="10" r="1.1" fill="currentColor" stroke="none"/><circle cx="12" cy="7.6" r="1.1" fill="currentColor" stroke="none"/><circle cx="16" cy="10" r="1.1" fill="currentColor" stroke="none"/></g>
+			<g id="i-globe" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3.2 9.5h17.6M3.2 14.5h17.6"/><path d="M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18Z"/></g>
+			<g id="i-heart" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7.4-4.4-7.4-9.5A4.2 4.2 0 0 1 12 8a4.2 4.2 0 0 1 7.4 2.5C19.4 15.6 12 20 12 20Z"/></g>
+			<g id="i-shield" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v6c0 4.4 3 7.6 7 9 4-1.4 7-4.6 7-9V6Z"/><path d="m9 12 2.2 2.2L15.4 10"/></g>
+			<g id="i-star" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3.6 2.7 5.5 6.1.9-4.4 4.3 1 6-5.4-2.9-5.4 2.9 1-6L3.2 10l6.1-.9Z"/></g>
+			<g id="i-chart" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16M7 20v-6M12 20V7M17 20v-9"/></g>
+			<g id="i-handshake" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 7 7.6h4.2l1.7 1.6a1.6 1.6 0 0 1-2.2 2.3l-1-.9"/><path d="M12.9 9.2h4l4.1 3.9-3 3.4-2.3-2"/><path d="m9.7 13.6 3 2.7M8.2 15.6l2.4 2.2"/></g>
+		</defs>
+	</svg>
+
+	<header class="hd">
+		<div class="hd-util">
+			<div class="wrap">
+				<p class="util-msg"><b>모집중</b> 2025학년도 2학기 늘봄 참여학교 신청 ~ 7월 31일</p>
+				<ul class="util-links">
+					<li><a href="https://www.wsu.ac.kr" target="_blank" rel="noopener">우송대학교</a></li>
+					<li><a href="https://neulbomhub.kosac.re.kr" target="_blank" rel="noopener">늘봄허브</a></li>
+					<li><a href="https://as.dje.go.kr" target="_blank" rel="noopener">대전시교육청 늘봄지원센터</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="hd-main">
+			<div class="wrap">
+				<p class="logo">
+					<a href="index.html">
+						<!-- 실제 사업단 심볼 확정 시 <img src="images/logo.svg" alt="우송대학교 WISE 늘봄">로 교체 -->
+						<span class="logo-mark" aria-hidden="true">W</span>
+						<span class="logo-txt"><b>우송대학교</b><em>WISE <span>늘봄</span></em></span>
+						<span class="blind">우송대학교 WISE 늘봄 홈페이지</span>
+					</a>
+				</p>
+				<button type="button" class="btn-gnb" aria-expanded="false" aria-controls="gnb" aria-label="전체 메뉴 열기">
+					<span></span><span></span><span></span>
+				</button>
+				<nav class="gnb" id="gnb" aria-label="주요 메뉴">
+					<ul>
+						<li>
+							<a href="intro.html">사업소개</a>
+							<div class="sub">
+								<a href="intro.html#overview">사업 개요</a>
+								<a href="intro.html#goal">추진 목표·전략</a>
+								<a href="intro.html#system">추진 체계</a>
+								<a href="intro.html#history">추진 경과</a>
+							</div>
+						</li>
+						<li>
+							<a href="programs.html">프로그램</a>
+							<div class="sub">
+								<a href="programs.html#guide">운영 개요</a>
+								<a href="programs.html#fields">분야별 프로그램</a>
+								<a href="programs.html#schedule">학기 운영 일정</a>
+								<a href="programs.html#safety">안전·품질 관리</a>
+							</div>
+						</li>
+						<li>
+							<a href="apply.html">참여안내</a>
+							<div class="sub">
+								<a href="apply.html#school">참여학교 신청</a>
+								<a href="apply.html#process">운영 절차</a>
+								<a href="apply.html#teacher">대학 강사 지원</a>
+								<a href="apply.html#forms">서식 내려받기</a>
+							</div>
+						</li>
+						<li>
+							<a href="notice.html">알림마당</a>
+							<div class="sub">
+								<a href="notice.html#notice">공지사항</a>
+								<a href="notice.html#gallery">활동 갤러리</a>
+								<a href="notice.html#press">보도자료</a>
+							</div>
+						</li>
+						<li>
+							<a href="contact.html">문의</a>
+							<div class="sub">
+								<a href="contact.html#form">온라인 문의</a>
+								<a href="contact.html#faq">자주 묻는 질문</a>
+								<a href="contact.html#map">오시는 길</a>
+							</div>
+						</li>
+					</ul>
+				</nav>
+				<a href="apply.html#school" class="btn btn-accent btn-sm hd-cta">참여학교 신청</a>
+			</div>
+		</div>
+	</header>
+	<div class="gnb-dim" aria-hidden="true"></div>
+
+	<main id="content">
+		<!-- 메인 비주얼 (슬라이드 3종) -->
+		<section class="mv" aria-roledescription="carousel" aria-label="주요 소식">
+			<div class="mv-track">
+				<article class="mv-slide mv-s1 on" role="group" aria-roledescription="slide" aria-label="1 / 3">
+					<div class="wrap">
+						<div class="mv-txt">
+							<p class="mv-tag">2025 대학연계 늘봄학교 프로그램</p>
+							<h2>대학의 강의실을<br />아이들의 <em>오후</em>로 옮깁니다</h2>
+							<p>우송대학교가 가진 AI·조리·보건·글로벌 교육 역량을 대전 지역 초등학교 늘봄교실에 그대로 전합니다.<br />학교는 프로그램 걱정을, 학부모는 돌봄 공백 걱정을 덜어 드립니다.</p>
+							<div class="mv-btns">
+								<a href="programs.html" class="btn btn-accent">프로그램 둘러보기 <i aria-hidden="true">→</i></a>
+								<a href="intro.html" class="btn btn-ghost">사업 소개</a>
+							</div>
+						</div>
+						<div class="mv-card">
+							<h3>바로 신청하기</h3>
+							<p>학기 중 상시 접수합니다.</p>
+							<ul>
+								<li><a href="apply.html#school">참여학교 신청 <span aria-hidden="true">→</span></a></li>
+								<li><a href="apply.html#teacher">대학 강사 지원 <span aria-hidden="true">→</span></a></li>
+								<li><a href="apply.html#forms">서식 내려받기 <span aria-hidden="true">→</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</article>
+
+				<article class="mv-slide mv-s2" role="group" aria-roledescription="slide" aria-label="2 / 3">
+					<div class="wrap">
+						<div class="mv-txt">
+							<p class="mv-tag">프로그램 안내</p>
+							<h2>다섯 개 분야,<br /><em>48개</em> 늘봄 프로그램</h2>
+							<p>AI·SW, 과학·수학, 예술·체육, 글로벌·언어, 인성·진로 다섯 분야를 학년별 난이도로 구성했습니다.<br />학교 여건에 맞춰 8주·12주·16주 과정 중 선택할 수 있습니다.</p>
+							<div class="mv-btns">
+								<a href="programs.html#fields" class="btn btn-accent">분야별 보기 <i aria-hidden="true">→</i></a>
+								<a href="programs.html#schedule" class="btn btn-ghost">운영 일정</a>
+							</div>
+						</div>
+						<div class="mv-card">
+							<h3>학기 운영 기준</h3>
+							<p>2025학년도 2학기</p>
+							<ul>
+								<li><a href="programs.html#schedule">주 1~2회 · 회당 80분 <span aria-hidden="true">→</span></a></li>
+								<li><a href="programs.html#schedule">학급당 15명 내외 <span aria-hidden="true">→</span></a></li>
+								<li><a href="programs.html#safety">안전요원 동반 운영 <span aria-hidden="true">→</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</article>
+
+				<article class="mv-slide mv-s3" role="group" aria-roledescription="slide" aria-label="3 / 3">
+					<div class="wrap">
+						<div class="mv-txt">
+							<p class="mv-tag">강사 모집</p>
+							<h2>가르치며 배우는<br />우송의 <em>늘봄 강사단</em></h2>
+							<p>재학생·대학원생·교원이 함께 팀을 이루어 초등 늘봄교실에 들어갑니다.<br />사전 교육과 교안, 교구, 안전 매뉴얼을 사업단이 모두 지원합니다.</p>
+							<div class="mv-btns">
+								<a href="apply.html#teacher" class="btn btn-accent">강사 지원하기 <i aria-hidden="true">→</i></a>
+								<a href="notice.html#notice" class="btn btn-ghost">모집 공고 보기</a>
+							</div>
+						</div>
+						<div class="mv-card">
+							<h3>강사단 지원 사항</h3>
+							<p>선발 후 제공됩니다.</p>
+							<ul>
+								<li><a href="apply.html#teacher">사전 직무교육 20시간 <span aria-hidden="true">→</span></a></li>
+								<li><a href="apply.html#teacher">교안·교구 일괄 지원 <span aria-hidden="true">→</span></a></li>
+								<li><a href="apply.html#teacher">활동비 및 수료증 <span aria-hidden="true">→</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</article>
+			</div>
+
+			<div class="mv-ctrl">
+				<div class="mv-dots" role="tablist" aria-label="슬라이드 선택">
+					<button type="button" role="tab" aria-selected="true" aria-label="1번 슬라이드"></button>
+					<button type="button" role="tab" aria-selected="false" aria-label="2번 슬라이드"></button>
+					<button type="button" role="tab" aria-selected="false" aria-label="3번 슬라이드"></button>
+				</div>
+				<p class="mv-count"><b class="cur">01</b> / 03</p>
+				<div class="mv-nav">
+					<button type="button" class="mv-prev" aria-label="이전 슬라이드">‹</button>
+					<button type="button" class="mv-next" aria-label="다음 슬라이드">›</button>
+					<button type="button" class="mv-play" aria-label="슬라이드 자동재생 정지">❙❙</button>
+				</div>
+			</div>
+		</section>
+
+		<!-- 퀵메뉴 -->
+		<nav class="quick wrap" aria-label="주요 서비스 바로가기">
+			<ul>
+				<li><a href="programs.html"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-book" /></svg></span><b>프로그램 안내</b><span>5개 분야 48개 과정</span></a></li>
+				<li><a href="apply.html#school"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-edit" /></svg></span><b>참여학교 신청</b><span>학기 중 상시 접수</span></a></li>
+				<li><a href="apply.html#teacher"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-user" /></svg></span><b>강사 지원</b><span>재학생·교원 모집</span></a></li>
+				<li><a href="notice.html#gallery"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-image" /></svg></span><b>활동 갤러리</b><span>늘봄교실 현장</span></a></li>
+				<li><a href="contact.html"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-chat" /></svg></span><b>문의하기</b><span>온라인 상담 접수</span></a></li>
+			</ul>
+		</nav>
+
+		<!-- 사업 소개 -->
+		<section class="sec about">
+			<div class="wrap">
+				<div class="about-txt rv">
+					<span class="overline">About WISE Neulbom</span>
+					<h2>지역 대학이 책임지는<br />늘봄학교 프로그램</h2>
+					<p class="lead">WISE 늘봄은 우송대학교가 대전 지역 초등학교와 함께 운영하는 대학연계 늘봄학교 프로그램입니다.</p>
+					<p>학교 현장이 가장 어려워하는 부분은 &lsquo;좋은 프로그램을 안정적으로 공급받는 일&rsquo;입니다.
+					사업단은 학과 교원이 설계하고 재학생이 보조 강사로 참여하는 팀 티칭 방식으로,
+					학기 단위의 검증된 커리큘럼과 교구, 안전 관리 체계를 학교에 통째로 제공합니다.
+					학교는 공간과 일정만 마련하면 됩니다.</p>
+					<a href="intro.html" class="btn btn-primary">사업 자세히 보기 <i aria-hidden="true">→</i></a>
+				</div>
+				<div class="about-vis rv">
+					<div class="about-grid">
+						<div class="about-cell">
+							<span class="ico ico-blue"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-handshake" /></svg></span>
+							<h3>학교 맞춤 설계</h3>
+							<p>학교 규모·학년·요일에 맞춰 8주에서 16주까지 과정을 조정합니다.</p>
+						</div>
+						<div class="about-cell">
+							<span class="ico ico-orange"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-star" /></svg></span>
+							<h3>대학 교원 설계</h3>
+							<p>학과 전임교원이 커리큘럼을 만들고 품질을 직접 점검합니다.</p>
+						</div>
+						<div class="about-cell">
+							<span class="ico ico-green"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-shield" /></svg></span>
+							<h3>안전 우선 운영</h3>
+							<p>강사 사전 교육, 안전요원 배치, 사고 대응 매뉴얼을 갖췄습니다.</p>
+						</div>
+						<div class="about-cell">
+							<span class="ico ico-violet"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-chart" /></svg></span>
+							<h3>운영 결과 환류</h3>
+							<p>학기마다 만족도를 조사해 다음 학기 과정에 반영합니다.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 성과 지표: 실제 운영 수치로 교체 -->
+			<div class="wrap stats rv">
+				<ul>
+					<li><p class="num" data-to="32">0</p><p class="lb">참여 초등학교</p></li>
+					<li><p class="num" data-to="48">0</p><p class="lb">운영 프로그램</p></li>
+					<li><p class="num" data-to="1240">0</p><p class="lb">참여 학생 수</p></li>
+					<li><p class="num" data-to="86">0</p><p class="lb">대학 강사단</p></li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- 프로그램 분야 -->
+		<section class="sec sec-bg">
+			<div class="wrap">
+				<div class="sec-head center rv">
+					<span class="overline">Programs</span>
+					<h2>다섯 개 분야의 늘봄 프로그램</h2>
+					<p>우송대학교의 특성화 학과가 직접 설계했습니다. 학년과 학교 여건에 따라 조합해 운영할 수 있습니다.</p>
+				</div>
+				<div class="prog-grid rv">
+					<article class="prog-card">
+						<div class="prog-thumb th-ai"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-ai" /></svg></div>
+						<div class="prog-body">
+							<span class="tag">AI · SW</span>
+							<h3>인공지능과 친구 되기</h3>
+							<p>블록 코딩과 생활 속 인공지능 체험으로 컴퓨팅 사고력의 첫 단추를 끼웁니다.</p>
+							<p class="prog-meta"><span>3~6학년</span><span>12주</span><span>주 1회 80분</span></p>
+						</div>
+					</article>
+					<article class="prog-card">
+						<div class="prog-thumb th-sci"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-flask" /></svg></div>
+						<div class="prog-body">
+							<span class="tag tag-green">과학 · 수학</span>
+							<h3>손으로 배우는 생활 과학</h3>
+							<p>교과서 밖 실험과 만들기로 원리를 몸으로 익히는 탐구 중심 수업입니다.</p>
+							<p class="prog-meta"><span>1~6학년</span><span>8주</span><span>주 1회 80분</span></p>
+						</div>
+					</article>
+					<article class="prog-card">
+						<div class="prog-thumb th-art"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-art" /></svg></div>
+						<div class="prog-body">
+							<span class="tag tag-orange">예술 · 체육</span>
+							<h3>몸과 마음을 여는 예술놀이</h3>
+							<p>음악, 미술, 신체 활동을 엮어 표현력과 자신감을 함께 키웁니다.</p>
+							<p class="prog-meta"><span>1~4학년</span><span>12주</span><span>주 2회 80분</span></p>
+						</div>
+					</article>
+					<article class="prog-card">
+						<div class="prog-thumb th-glo"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-globe" /></svg></div>
+						<div class="prog-body">
+							<span class="tag">글로벌 · 언어</span>
+							<h3>세계로 열린 늘봄 교실</h3>
+							<p>외국인 재학생과 함께하는 생활 영어와 세계 문화 체험 활동입니다.</p>
+							<p class="prog-meta"><span>3~6학년</span><span>16주</span><span>주 1회 80분</span></p>
+						</div>
+					</article>
+					<article class="prog-card">
+						<div class="prog-thumb th-life"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-heart" /></svg></div>
+						<div class="prog-body">
+							<span class="tag tag-orange">인성 · 진로</span>
+							<h3>나를 알아가는 시간</h3>
+							<p>감정 표현과 관계 맺기, 직업 체험으로 자기 이해의 폭을 넓힙니다.</p>
+							<p class="prog-meta"><span>4~6학년</span><span>8주</span><span>주 1회 80분</span></p>
+						</div>
+					</article>
+					<article class="prog-card">
+						<div class="prog-thumb th-care"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-shield" /></svg></div>
+						<div class="prog-body">
+							<span class="tag tag-gray">돌봄 연계</span>
+							<h3>저학년 맞춤 돌봄 활동</h3>
+							<p>1~2학년 눈높이에 맞춘 놀이·독서·휴식이 어우러진 통합 활동입니다.</p>
+							<p class="prog-meta"><span>1~2학년</span><span>학기 단위</span><span>주 3회</span></p>
+						</div>
+					</article>
+				</div>
+				<p class="rv" style="text-align:center;margin-top:40px">
+					<a href="programs.html" class="btn btn-line">전체 프로그램 보기 <i aria-hidden="true">→</i></a>
+				</p>
+			</div>
+		</section>
+
+		<!-- 공지 + 갤러리 -->
+		<section class="sec">
+			<div class="wrap board-wrap">
+				<div class="rv">
+					<div class="tabs" role="tablist" aria-label="게시판 종류">
+						<button type="button" role="tab" id="tab-notice" aria-controls="panel-notice" aria-selected="true">공지사항</button>
+						<button type="button" role="tab" id="tab-press" aria-controls="panel-press" aria-selected="false">보도자료</button>
+					</div>
+					<div class="tab-panel" id="panel-notice" role="tabpanel" aria-labelledby="tab-notice">
+						<ul class="board-list">
+							<li><a href="notice.html#notice"><span class="tag tag-orange">모집</span><span class="bt">2025학년도 2학기 늘봄 참여학교 모집 안내</span><span class="bd">2025.06.30</span></a></li>
+							<li><a href="notice.html#notice"><span class="tag">안내</span><span class="bt">늘봄 프로그램 운영 강사 사전 직무교육 일정 공지</span><span class="bd">2025.06.24</span></a></li>
+							<li><a href="notice.html#notice"><span class="tag">안내</span><span class="bt">1학기 운영 만족도 조사 결과 및 개선 사항 안내</span><span class="bd">2025.06.12</span></a></li>
+							<li><a href="notice.html#notice"><span class="tag tag-green">서식</span><span class="bt">참여학교 협약 서식 및 운영계획서 양식 배포</span><span class="bd">2025.05.28</span></a></li>
+							<li><a href="notice.html#notice"><span class="tag tag-gray">일반</span><span class="bt">늘봄교실 안전 관리 지침 개정 안내(2025년 5월)</span><span class="bd">2025.05.09</span></a></li>
+						</ul>
+						<a href="notice.html#notice" class="more-link">공지사항 전체보기 <span aria-hidden="true">→</span></a>
+					</div>
+					<div class="tab-panel" id="panel-press" role="tabpanel" aria-labelledby="tab-press" hidden>
+						<ul class="board-list">
+							<li><a href="notice.html#press"><span class="tag">보도</span><span class="bt">우송대, 대전 지역 초등학교와 늘봄 프로그램 운영 협약</span><span class="bd">2025.06.18</span></a></li>
+							<li><a href="notice.html#press"><span class="tag">보도</span><span class="bt">&ldquo;대학 강의실이 늘봄교실로&rdquo; 우송대 AI 수업 현장</span><span class="bd">2025.05.30</span></a></li>
+							<li><a href="notice.html#press"><span class="tag">보도</span><span class="bt">외국인 유학생과 함께하는 늘봄 글로벌 교실 문 열어</span><span class="bd">2025.04.21</span></a></li>
+							<li><a href="notice.html#press"><span class="tag">보도</span><span class="bt">우송대 늘봄사업단, 1학기 32개교 운영 마무리</span><span class="bd">2025.03.14</span></a></li>
+							<li><a href="notice.html#press"><span class="tag">보도</span><span class="bt">지역 대학의 늘봄 참여, 돌봄 공백 해소에 힘 보태</span><span class="bd">2025.03.02</span></a></li>
+						</ul>
+						<a href="notice.html#press" class="more-link">보도자료 전체보기 <span aria-hidden="true">→</span></a>
+					</div>
+				</div>
+
+				<div class="gallery-side rv">
+					<h3>활동 갤러리</h3>
+					<!-- 사진 확보 후 .ph 자리를 <img>로 교체 -->
+					<div class="gal-grid">
+						<a href="notice.html#gallery" class="gal-item"><figure><span class="ph ph-1"></span><figcaption>AI 코딩 늘봄교실</figcaption></figure></a>
+						<a href="notice.html#gallery" class="gal-item"><figure><span class="ph ph-2"></span><figcaption>생활 과학 실험</figcaption></figure></a>
+						<a href="notice.html#gallery" class="gal-item"><figure><span class="ph ph-3"></span><figcaption>예술놀이 발표회</figcaption></figure></a>
+						<a href="notice.html#gallery" class="gal-item"><figure><span class="ph ph-4"></span><figcaption>글로벌 문화 체험</figcaption></figure></a>
+					</div>
+					<a href="notice.html#gallery" class="more-link">갤러리 더보기 <span aria-hidden="true">→</span></a>
+				</div>
+			</div>
+		</section>
+
+		<!-- 신청 배너 -->
+		<section class="cta-band">
+			<div class="wrap">
+				<div>
+					<h2>2025학년도 2학기 참여학교를 모집합니다</h2>
+					<p>신청서 한 장이면 됩니다. 나머지 운영 준비는 사업단이 맡습니다.</p>
+				</div>
+				<div class="btns">
+					<a href="apply.html#school" class="btn btn-accent">참여학교 신청 <i aria-hidden="true">→</i></a>
+					<a href="contact.html" class="btn btn-ghost">먼저 문의하기</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- 관련 사이트 -->
+		<div class="links-strip">
+			<div class="wrap">
+				<h3>관련 기관</h3>
+				<ul>
+					<li><a href="https://www.wsu.ac.kr" target="_blank" rel="noopener">우송대학교</a></li>
+					<li><a href="https://www.moe.go.kr" target="_blank" rel="noopener">교육부</a></li>
+					<li><a href="https://www.afterschool.go.kr" target="_blank" rel="noopener">늘봄·방과후 중앙포털</a></li>
+					<li><a href="https://neulbomhub.kosac.re.kr" target="_blank" rel="noopener">늘봄허브</a></li>
+					<li><a href="https://as.dje.go.kr" target="_blank" rel="noopener">대전시교육청 늘봄지원센터</a></li>
+					<li><a href="https://www.dje.go.kr" target="_blank" rel="noopener">대전광역시교육청</a></li>
+				</ul>
+			</div>
+		</div>
+	</main>
+
+	<footer class="ft">
+		<div class="ft-top">
+			<div class="wrap">
+				<ul class="ft-policy">
+					<li><a href="#" class="strong">개인정보처리방침</a></li>
+					<li><a href="#">이메일무단수집거부</a></li>
+					<li><a href="#">저작권 정책</a></li>
+					<li><a href="contact.html#map">오시는 길</a></li>
+				</ul>
+				<div class="family">
+					<label class="blind" for="family-site">관련 사이트 바로가기</label>
+					<select id="family-site">
+						<option value="">관련 사이트 바로가기</option>
+						<option value="https://www.wsu.ac.kr">우송대학교</option>
+						<option value="https://www.moe.go.kr">교육부</option>
+						<option value="https://www.afterschool.go.kr">늘봄·방과후 중앙포털</option>
+						<option value="https://neulbomhub.kosac.re.kr">늘봄허브</option>
+						<option value="https://as.dje.go.kr">대전시교육청 늘봄지원센터</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="ft-main">
+			<div class="wrap">
+				<div class="ft-info">
+					<div class="ft-logo">
+						<span class="logo-mark" aria-hidden="true">W</span>
+						<b>우송대학교 WISE 늘봄사업단</b>
+					</div>
+					<address>
+						<!-- 실제 사업단 정보로 교체 필요 -->
+						<span>(34606) 대전광역시 동구 동대전로 171 우송대학교</span><br />
+						<span>대표전화 042-630-0000</span><span>팩스 042-630-0001</span><span>이메일 neulbom@wsu.ac.kr</span>
+					</address>
+					<p class="ft-copy">© 2025 Woosong University WISE Neulbom Project. All rights reserved.</p>
+				</div>
+				<div class="ft-contact">
+					<h3>운영 문의</h3>
+					<p class="ft-tel">042-630-0000</p>
+					<p>평일 09:00 ~ 18:00 (점심 12:00 ~ 13:00)<br />토·일요일 및 공휴일 휴무</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/common.js"></script>
+</body>
+</html>

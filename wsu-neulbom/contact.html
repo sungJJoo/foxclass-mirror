@@ -1,0 +1,346 @@
+<!-- 문의 페이지 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="우송대학교 WISE 늘봄 온라인 문의, 자주 묻는 질문, 오시는 길 안내." />
+	<meta name="keywords" content="우송대학교, WISE 늘봄, 늘봄학교, 대학연계 늘봄, 대전 늘봄, 방과후 프로그램, 초등 돌봄" />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="우송대학교 WISE 늘봄" />
+	<meta property="og:title" content="문의 | 우송대학교 WISE 늘봄" />
+	<meta property="og:description" content="우송대학교 WISE 늘봄 온라인 문의, 자주 묻는 질문, 오시는 길 안내." />
+	<title>문의 | 우송대학교 WISE 늘봄</title>
+	<link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<a class="skip" href="#content">본문 바로가기</a>
+
+	<!-- 아이콘 스프라이트 -->
+	<svg class="blind" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+		<defs>
+			<g id="i-book" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4.5h6a3 3 0 0 1 3 3V21a2.5 2.5 0 0 0-2.5-2.5H4z"/><path d="M20 4.5h-6a3 3 0 0 0-3 3V21a2.5 2.5 0 0 1 2.5-2.5H20z"/></g>
+			<g id="i-edit" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3H5.5A2.5 2.5 0 0 0 3 5.5v13A2.5 2.5 0 0 0 5.5 21h13a2.5 2.5 0 0 0 2.5-2.5V12"/><path d="M18.4 3.6a2 2 0 0 1 2.8 2.8L12.6 15H9.8v-2.8z"/></g>
+			<g id="i-user" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.6"/><path d="M4.5 20.2a7.5 7.5 0 0 1 15 0"/></g>
+			<g id="i-image" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><circle cx="8.6" cy="10" r="1.7"/><path d="m3.6 17.4 4.6-4.3 3.5 3.2 3.4-3.4 5.3 5"/></g>
+			<g id="i-chat" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.2c0 4.1-4 7.4-9 7.4a10 10 0 0 1-2.6-.34L4.4 21l1.2-3.6A6.9 6.9 0 0 1 3 12.2C3 8.1 7 4.8 12 4.8s9 3.3 9 7.4Z"/></g>
+			<g id="i-cal" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2.5"/><path d="M3 10h18M8 3v4M16 3v4"/></g>
+			<g id="i-down" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5v12M7.5 11.2 12 15.7l4.5-4.5M4 19.5h16"/></g>
+			<g id="i-pin" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></g>
+			<g id="i-phone" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.4 3.5h3l1.5 4-2 1.4a12 12 0 0 0 6.2 6.2l1.4-2 4 1.5v3a2 2 0 0 1-2.2 2A16.6 16.6 0 0 1 4.4 5.7a2 2 0 0 1 2-2.2Z"/></g>
+			<g id="i-mail" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.8 7 7.1 5.4a1.8 1.8 0 0 0 2.2 0L20.2 7"/></g>
+			<g id="i-ai" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6.5" y="6.5" width="11" height="11" rx="2.6"/><path d="M10 10.5h4v3h-4z"/><path d="M9.5 3v3.5M14.5 3v3.5M9.5 17.5V21M14.5 17.5V21M3 9.5h3.5M3 14.5h3.5M17.5 9.5H21M17.5 14.5H21"/></g>
+			<g id="i-flask" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 3h5M10.5 3v6L5.2 17.6A2.4 2.4 0 0 0 7.2 21h9.6a2.4 2.4 0 0 0 2-3.4L13.5 9V3"/><path d="M7.6 14.5h8.8"/></g>
+			<g id="i-art" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 0 0 0 18c1.3 0 2-.9 2-1.9 0-1.3-1.2-1.7-1.2-2.8 0-.8.7-1.4 1.6-1.4H16a5 5 0 0 0 5-5C21 6 17 3 12 3Z"/><circle cx="8" cy="10" r="1.1" fill="currentColor" stroke="none"/><circle cx="12" cy="7.6" r="1.1" fill="currentColor" stroke="none"/><circle cx="16" cy="10" r="1.1" fill="currentColor" stroke="none"/></g>
+			<g id="i-globe" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3.2 9.5h17.6M3.2 14.5h17.6"/><path d="M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18Z"/></g>
+			<g id="i-heart" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7.4-4.4-7.4-9.5A4.2 4.2 0 0 1 12 8a4.2 4.2 0 0 1 7.4 2.5C19.4 15.6 12 20 12 20Z"/></g>
+			<g id="i-shield" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v6c0 4.4 3 7.6 7 9 4-1.4 7-4.6 7-9V6Z"/><path d="m9 12 2.2 2.2L15.4 10"/></g>
+			<g id="i-star" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3.6 2.7 5.5 6.1.9-4.4 4.3 1 6-5.4-2.9-5.4 2.9 1-6L3.2 10l6.1-.9Z"/></g>
+			<g id="i-chart" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16M7 20v-6M12 20V7M17 20v-9"/></g>
+			<g id="i-handshake" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 7 7.6h4.2l1.7 1.6a1.6 1.6 0 0 1-2.2 2.3l-1-.9"/><path d="M12.9 9.2h4l4.1 3.9-3 3.4-2.3-2"/><path d="m9.7 13.6 3 2.7M8.2 15.6l2.4 2.2"/></g>
+		</defs>
+	</svg>
+
+	<header class="hd">
+		<div class="hd-util">
+			<div class="wrap">
+				<p class="util-msg"><b>모집중</b> 2025학년도 2학기 늘봄 참여학교 신청 ~ 7월 31일</p>
+				<ul class="util-links">
+					<li><a href="https://www.wsu.ac.kr" target="_blank" rel="noopener">우송대학교</a></li>
+					<li><a href="https://neulbomhub.kosac.re.kr" target="_blank" rel="noopener">늘봄허브</a></li>
+					<li><a href="https://as.dje.go.kr" target="_blank" rel="noopener">대전시교육청 늘봄지원센터</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="hd-main">
+			<div class="wrap">
+				<p class="logo">
+					<a href="index.html">
+						<!-- 실제 사업단 심볼 확정 시 <img src="images/logo.svg" alt="우송대학교 WISE 늘봄">로 교체 -->
+						<span class="logo-mark" aria-hidden="true">W</span>
+						<span class="logo-txt"><b>우송대학교</b><em>WISE <span>늘봄</span></em></span>
+						<span class="blind">우송대학교 WISE 늘봄 홈페이지</span>
+					</a>
+				</p>
+				<button type="button" class="btn-gnb" aria-expanded="false" aria-controls="gnb" aria-label="전체 메뉴 열기">
+					<span></span><span></span><span></span>
+				</button>
+				<nav class="gnb" id="gnb" aria-label="주요 메뉴">
+					<ul>
+						<li>
+							<a href="intro.html">사업소개</a>
+							<div class="sub">
+								<a href="intro.html#overview">사업 개요</a>
+								<a href="intro.html#goal">추진 목표·전략</a>
+								<a href="intro.html#system">추진 체계</a>
+								<a href="intro.html#history">추진 경과</a>
+							</div>
+						</li>
+						<li>
+							<a href="programs.html">프로그램</a>
+							<div class="sub">
+								<a href="programs.html#guide">운영 개요</a>
+								<a href="programs.html#fields">분야별 프로그램</a>
+								<a href="programs.html#schedule">학기 운영 일정</a>
+								<a href="programs.html#safety">안전·품질 관리</a>
+							</div>
+						</li>
+						<li>
+							<a href="apply.html">참여안내</a>
+							<div class="sub">
+								<a href="apply.html#school">참여학교 신청</a>
+								<a href="apply.html#process">운영 절차</a>
+								<a href="apply.html#teacher">대학 강사 지원</a>
+								<a href="apply.html#forms">서식 내려받기</a>
+							</div>
+						</li>
+						<li>
+							<a href="notice.html">알림마당</a>
+							<div class="sub">
+								<a href="notice.html#notice">공지사항</a>
+								<a href="notice.html#gallery">활동 갤러리</a>
+								<a href="notice.html#press">보도자료</a>
+							</div>
+						</li>
+						<li>
+							<a href="contact.html">문의</a>
+							<div class="sub">
+								<a href="contact.html#form">온라인 문의</a>
+								<a href="contact.html#faq">자주 묻는 질문</a>
+								<a href="contact.html#map">오시는 길</a>
+							</div>
+						</li>
+					</ul>
+				</nav>
+				<a href="apply.html#school" class="btn btn-accent btn-sm hd-cta">참여학교 신청</a>
+			</div>
+		</div>
+	</header>
+	<div class="gnb-dim" aria-hidden="true"></div>
+
+	<main id="content">
+		<section class="sub-vis">
+			<div class="wrap">
+				<ul class="crumb">
+					<li><a href="index.html">홈</a></li>
+					<li>문의</li>
+				</ul>
+				<h2>문의</h2>
+				<p>궁금한 점을 남겨 주시면 담당자가 2일 이내에 연락드립니다.</p>
+			</div>
+		</section>
+
+		<nav class="lnb" aria-label="문의 하위 메뉴">
+			<div class="wrap">
+				<a href="#form" class="on">온라인 문의</a>
+				<a href="#faq">자주 묻는 질문</a>
+				<a href="#map">오시는 길</a>
+			</div>
+		</nav>
+
+		<section class="sub-sec" id="form">
+			<div class="wrap">
+				<div class="sec-head rv">
+					<span class="overline">Contact</span>
+					<h3>온라인 문의</h3>
+					<p>학교 참여, 강사 지원, 프로그램 내용 등 무엇이든 남겨 주세요.</p>
+				</div>
+
+				<div class="contact-cards rv" style="margin-bottom:44px">
+					<div class="contact-card">
+						<span class="ico ico-blue"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-phone" /></svg></span>
+						<h4>전화 문의</h4>
+						<!-- 실제 사업단 번호로 교체 -->
+						<p class="big">042-630-0000</p>
+						<p>평일 09:00 ~ 18:00</p>
+					</div>
+					<div class="contact-card">
+						<span class="ico ico-orange"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-mail" /></svg></span>
+						<h4>이메일 문의</h4>
+						<p class="big" style="font-size:19px">neulbom@wsu.ac.kr</p>
+						<p>서식 제출도 이 주소로 받습니다.</p>
+					</div>
+					<div class="contact-card">
+						<span class="ico ico-green"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-cal" /></svg></span>
+						<h4>방문 상담</h4>
+						<p class="big" style="font-size:19px">사전 예약제</p>
+						<p>전화로 일정을 먼저 잡아 주세요.</p>
+					</div>
+				</div>
+
+				<!-- 서버 연동 전 데모 폼입니다. action 지정 후 실제 접수 처리 필요 -->
+				<form id="inquiry-form" class="rv" novalidate>
+					<div class="form-grid">
+						<div class="field">
+							<label for="f-type">문의 유형 <span class="req" aria-hidden="true">*</span></label>
+							<select id="f-type" name="type" required>
+								<option value="school">참여학교 신청 문의</option>
+								<option value="program">프로그램 내용 문의</option>
+								<option value="teacher">강사 지원 문의</option>
+								<option value="etc">기타</option>
+							</select>
+						</div>
+						<div class="field">
+							<label for="f-name">이름 <span class="req" aria-hidden="true">*</span></label>
+							<input type="text" id="f-name" name="name" required autocomplete="name" />
+						</div>
+						<div class="field">
+							<label for="f-org">소속 (학교명 · 학과)</label>
+							<input type="text" id="f-org" name="org" autocomplete="organization" />
+						</div>
+						<div class="field">
+							<label for="f-tel">연락처 <span class="req" aria-hidden="true">*</span></label>
+							<input type="tel" id="f-tel" name="tel" required autocomplete="tel" placeholder="010-0000-0000" />
+						</div>
+						<div class="field full">
+							<label for="f-email">이메일 <span class="req" aria-hidden="true">*</span></label>
+							<input type="email" id="f-email" name="email" required autocomplete="email" />
+						</div>
+						<div class="field full">
+							<label for="f-msg">문의 내용 <span class="req" aria-hidden="true">*</span></label>
+							<textarea id="f-msg" name="message" required placeholder="학년 구성, 희망 요일, 관심 분야 등을 함께 적어 주시면 더 빠르게 안내해 드릴 수 있습니다."></textarea>
+						</div>
+					</div>
+					<label class="agree">
+						<input type="checkbox" name="agree" required />
+						<span>개인정보 수집·이용에 동의합니다. 수집 항목은 이름·연락처·이메일이며, 문의 처리 목적으로만 사용하고 처리 완료 후 1년간 보관 뒤 파기합니다.</span>
+					</label>
+					<div class="form-submit">
+						<button type="submit" class="btn btn-primary">문의 보내기 <i aria-hidden="true">→</i></button>
+						<p class="form-msg" role="status" hidden></p>
+					</div>
+				</form>
+			</div>
+		</section>
+
+		<section class="sub-sec bg" id="faq">
+			<div class="wrap">
+				<div class="sec-head rv">
+					<span class="overline">FAQ</span>
+					<h3>자주 묻는 질문</h3>
+				</div>
+				<ul class="faq rv">
+					<li>
+						<button type="button" class="faq-q" aria-expanded="false">
+							<span class="qm">Q</span><span class="txt">학교가 부담해야 하는 비용이 있나요?</span><span class="arrow" aria-hidden="true">⌄</span>
+						</button>
+						<div class="faq-a"><div><p>강사비와 교구·재료비는 사업단이 부담하므로 학교가 따로 부담하는 비용은 없습니다. 다만 학교 시설 이용에 따른 관리 사항은 학교 기준을 따릅니다.</p></div></div>
+					</li>
+					<li>
+						<button type="button" class="faq-q" aria-expanded="false">
+							<span class="qm">Q</span><span class="txt">한 학교에서 여러 과정을 함께 운영할 수 있나요?</span><span class="arrow" aria-hidden="true">⌄</span>
+						</button>
+						<div class="faq-a"><div><p>가능합니다. 학년대를 나누어 두세 과정을 동시에 운영하는 학교가 많습니다. 다만 강사 배치 여건에 따라 요일이 분산될 수 있어 사전 협의가 필요합니다.</p></div></div>
+					</li>
+					<li>
+						<button type="button" class="faq-q" aria-expanded="false">
+							<span class="qm">Q</span><span class="txt">신청했는데 배정이 안 될 수도 있나요?</span><span class="arrow" aria-hidden="true">⌄</span>
+						</button>
+						<div class="faq-a"><div><p>신청 학교 수가 한 학기 배정 가능 규모를 넘으면 다음 학기로 순연될 수 있습니다. 이 경우 접수 순서와 지역 균형을 함께 고려하며, 결과는 개별적으로 안내드립니다.</p></div></div>
+					</li>
+					<li>
+						<button type="button" class="faq-q" aria-expanded="false">
+							<span class="qm">Q</span><span class="txt">학기 중간에도 신청할 수 있나요?</span><span class="arrow" aria-hidden="true">⌄</span>
+						</button>
+						<div class="faq-a"><div><p>접수는 상시로 받습니다. 다만 강사 배치와 교구 준비에 시간이 필요해 개강 6주 전까지 접수된 건부터 해당 학기에 배정합니다. 그 이후 접수는 다음 학기 운영으로 이어집니다.</p></div></div>
+					</li>
+					<li>
+						<button type="button" class="faq-q" aria-expanded="false">
+							<span class="qm">Q</span><span class="txt">강사는 어떤 분들인가요?</span><span class="arrow" aria-hidden="true">⌄</span>
+						</button>
+						<div class="faq-a"><div><p>우송대학교 교원과 재학생·대학원생으로 구성된 강사단입니다. 모두 아동 관련 결격 사유 조회를 마치고 사전 직무교육 20시간을 이수한 뒤 현장에 배치되며, 수업은 주강사와 보조강사가 함께 들어가는 팀 티칭으로 운영합니다.</p></div></div>
+					</li>
+					<li>
+						<button type="button" class="faq-q" aria-expanded="false">
+							<span class="qm">Q</span><span class="txt">학생 안전 사고에는 어떻게 대응하나요?</span><span class="arrow" aria-hidden="true">⌄</span>
+						</button>
+						<div class="faq-a"><div><p>차시별 위험 요소를 사전에 점검하고 실험·조리·신체 활동에는 보조강사를 추가 배치합니다. 사고 발생 시 학교 보건실과 담당 교사에게 즉시 연계하는 대응 절차를 갖추고 있으며, 사업단은 관련 보험에 가입해 운영합니다.</p></div></div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="sub-sec" id="map">
+			<div class="wrap">
+				<div class="sec-head rv">
+					<span class="overline">Location</span>
+					<h3>오시는 길</h3>
+					<p>방문 상담은 사전 예약 후 이용해 주세요.</p>
+				</div>
+				<!-- 지도 API 연동 시 이 영역을 지도 컨테이너로 교체 -->
+				<div class="map-box rv">
+					<div class="inner">
+						<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-pin" /></svg>
+						<b>우송대학교 WISE 늘봄사업단</b>
+						<p>지도 영역 &mdash; 카카오맵/네이버지도 API 연동 예정</p>
+					</div>
+				</div>
+				<div class="tbl-wrap rv" style="margin-top:28px">
+					<table class="tbl">
+						<caption class="blind">찾아오시는 길 안내 표</caption>
+						<tbody>
+							<tr><th scope="row">주소</th><td>(34606) 대전광역시 동구 동대전로 171 우송대학교</td></tr>
+							<tr><th scope="row">지하철</th><td>대전 도시철도 1호선 대동역 하차 후 도보 이용</td></tr>
+							<tr><th scope="row">버스</th><td>우송대학교 정류장 하차 (노선은 대전 시내버스 안내 참고)</td></tr>
+							<tr><th scope="row">주차</th><td>교내 주차장 이용 (방문 시 사전 안내 필요)</td></tr>
+						</tbody>
+					</table>
+					<p class="tbl-note">※ 사업단 사무실 위치와 연락처는 확정 후 안내드립니다.</p>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="ft">
+		<div class="ft-top">
+			<div class="wrap">
+				<ul class="ft-policy">
+					<li><a href="#" class="strong">개인정보처리방침</a></li>
+					<li><a href="#">이메일무단수집거부</a></li>
+					<li><a href="#">저작권 정책</a></li>
+					<li><a href="contact.html#map">오시는 길</a></li>
+				</ul>
+				<div class="family">
+					<label class="blind" for="family-site">관련 사이트 바로가기</label>
+					<select id="family-site">
+						<option value="">관련 사이트 바로가기</option>
+						<option value="https://www.wsu.ac.kr">우송대학교</option>
+						<option value="https://www.moe.go.kr">교육부</option>
+						<option value="https://www.afterschool.go.kr">늘봄·방과후 중앙포털</option>
+						<option value="https://neulbomhub.kosac.re.kr">늘봄허브</option>
+						<option value="https://as.dje.go.kr">대전시교육청 늘봄지원센터</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="ft-main">
+			<div class="wrap">
+				<div class="ft-info">
+					<div class="ft-logo">
+						<span class="logo-mark" aria-hidden="true">W</span>
+						<b>우송대학교 WISE 늘봄사업단</b>
+					</div>
+					<address>
+						<!-- 실제 사업단 정보로 교체 필요 -->
+						<span>(34606) 대전광역시 동구 동대전로 171 우송대학교</span><br />
+						<span>대표전화 042-630-0000</span><span>팩스 042-630-0001</span><span>이메일 neulbom@wsu.ac.kr</span>
+					</address>
+					<p class="ft-copy">© 2025 Woosong University WISE Neulbom Project. All rights reserved.</p>
+				</div>
+				<div class="ft-contact">
+					<h3>운영 문의</h3>
+					<p class="ft-tel">042-630-0000</p>
+					<p>평일 09:00 ~ 18:00 (점심 12:00 ~ 13:00)<br />토·일요일 및 공휴일 휴무</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/common.js"></script>
+</body>
+</html>
